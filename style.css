@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#crud-section {
+  padding-top: 120px; /* height of navbar */
+  margin-top: -120px; /* negative margin to offset scroll */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -415,6 +424,105 @@ body {
   color: #554545;
   margin-top: 65px;
 }
+
+/* CRUD Section Styles */
+#crud-section {
+  background-color: rgba(34, 34, 34, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 50px auto;
+  color: #fff;
+}
+
+#crud-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ceaf73;
+}
+
+#itemForm input, 
+#itemForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+#itemForm button {
+  background-color: #ceaf73;
+  color: #222;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#itemForm button:hover {
+  background-color: #b89b5a;
+  color: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.table th {
+  background-color: #444;
+  color: #ceaf73;
+}
+
+.table td {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #222;
+  border: none;
+  padding: 1px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 1px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+
 
 /* Responsive */
 @media (max-width: 1024px) {

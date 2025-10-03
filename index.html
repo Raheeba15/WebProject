@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeBar Inspired</title>
+  <title>BeBar App</title>
 
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pap6FJf5..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Your custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,15 +29,17 @@
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/bar.png" alt="BeBar Logo">
         </a>
 
-        <ul class="nav-right">
+       <ul class="nav-right">
           <li><a href="#contact">Contact</a></li>
           <li><a href="buynow.html">Buy now</a></li>
+          <li><a href="#crud-section">CRUD App</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero-section">
       <div class="slider">
         <div class="slider-image">
@@ -54,22 +61,20 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
     <section class="gallery" id="menu">
       <div class="container gallery-row">
         <h2 class="section-title">
           SEE <span class="themecolor">WHAT WE'VE <br> GOT</span> FOR YOU
         </h2>
-
         <div class="gallery-card">
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/home_bar_menu_icon1.png" alt="Drinks">
           <h3>Drinks</h3>
         </div>
-
         <div class="gallery-card">
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/home_bar_menu_icon2.png" alt="Meals">
           <h3>Meals</h3>
         </div>
-
         <div class="gallery-card">
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/home_bar_menu_icon3.png" alt="Games">
           <h3>Games</h3>
@@ -77,13 +82,14 @@
       </div>
     </section>
 
-    <section class="happenings">
+    <!-- Happenings Section -->
+    <section class="happenings" id="events">
       <div class="happenings-row">
         <div class="happening-card">
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/home_bar_happening1.jpg" alt="Event 1">
           <div class="happening-text">
             <h3>TASTY MONDAYS</h3>
-            <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+            <p>Lorem ipsum dolor sit amet...</p>
             <a href="#">See more...</a>
           </div>
         </div>
@@ -91,7 +97,7 @@
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/home_bar_happening2.jpg" alt="Event 2">
           <div class="happening-text">
             <h3>DART COMPETITION AT FRIDAYS</h3>
-            <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+            <p>Lorem ipsum dolor sit amet...</p>
             <a href="#">See more...</a>
           </div>
         </div>
@@ -99,62 +105,177 @@
           <img src="https://themes.muffingroup.com/be/bar/wp-content/uploads/2015/02/home_bar_happening3.jpg" alt="Event 3">
           <div class="happening-text">
             <h3>WHISKY HAPPY HOURS</h3>
-            <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+            <p>Lorem ipsum dolor sit amet...</p>
             <a href="#">See more...</a>
           </div>
         </div>
       </div>
-
-      <div class="happening-contact">
-        <div class="contact-item telephone">
-          <span class="contact-label">telephone</span>
-          <span class="contact-value">+34 233 545 566</span>
-        </div>
-        <div class="contact-item email">
-          <span class="contact-label">e-mail</span>
-          <span class="contact-value">noreply@envato.com</span>
-        </div>
-      </div>
     </section>
+
+    <!-- CRUD Section -->
+    <section id="crud-section" class="container my-5">
+      <h2 class="mb-4">CRUD Demo</h2>
+
+      <form id="itemForm" class="mb-4">
+        <input type="hidden" id="itemId">
+        <input type="text" id="title" placeholder="Title" class="form-control mb-2">
+        <textarea id="body" placeholder="Body" class="form-control mb-2"></textarea>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+
+      <div id="loading" style="display:none;">Loading...</div>
+
+      <table class="table table-bordered" id="itemsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
-    <div class="footer-links">
-      <div class="useful-links">
-        <span class="useful-title">Useful links:</span>
-        <div class="links-row">
-          <a href="#gallery">Gallery</a>
-          <a href="#about">About us</a>
-          <a href="#hours">Opening hours</a>
-        </div>
-      </div>
-
-      <div class="socialize-section">
-        <div class="socialize-logos">
-          <span class="socialize">Socialize with BeBar:</span>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-google"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <div class="newsletter-section">
-          <span class="newsletter">Our newsletter:</span>
-          <form class="newsletter-form">
-            <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required>
-            <input type="submit" value="Sign up">
-          </form>
-        </div>
+ <footer>
+  <div class="footer-links">
+    <div class="useful-links">
+      <span class="useful-title">Useful links:</span>
+      <div class="links-row">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About us</a>
+        <a href="#hours">Opening hours</a>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      © 2025 Betheme by Muffin group | All Rights Reserved | Powered by WordPress
+    <div class="socialize-section">
+      <div class="socialize-logos">
+        <span class="socialize">Socialize with BeBar:</span>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="newsletter-section">
+        <span class="newsletter">Our newsletter:</span>
+        <form class="newsletter-form">
+          <input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required>
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
     </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Betheme by Muffin group | All Rights Reserved | Powered by WordPress
+  </div>
+</footer>
+
   </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <!-- Smooth scroll for in-page links -->
+  <script>
+  $(document).ready(function() {
+    $('a[href^="#"]').on('click', function(e) {
+      e.preventDefault();
+      const target = $(this.getAttribute('href'));
+      if(target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 70
+        }, 500);
+      }
+    });
+  });
+  </script>
+
+  <!-- CRUD functionality -->
+  <script>
+  const apiURL = "https://jsonplaceholder.typicode.com/posts";
+
+  function fetchItems() {
+    $("#loading").show();
+    $.get(apiURL, function(data){
+      const tbody = $("#itemsTable tbody");
+      tbody.empty();
+      data.slice(0, 5).forEach(item => {
+        tbody.append(`
+          <tr>
+            <td>${item.id}</td>
+            <td>${item.title}</td>
+            <td>${item.body}</td>
+            <td>
+              <button class="btn btn-sm btn-warning edit-btn" data-id="${item.id}">Edit</button>
+              <button class="btn btn-sm btn-danger delete-btn" data-id="${item.id}">Delete</button>
+            </td>
+          </tr>
+        `);
+      });
+      $("#loading").hide();
+    });
+  }
+
+  $("#itemForm").on("submit", function(e){
+    e.preventDefault();
+    const id = $("#itemId").val();
+    const title = $("#title").val();
+    const body = $("#body").val();
+
+    if(id){
+      $.ajax({
+        url: apiURL + "/" + id,
+        method: "PUT",
+        data: { title, body },
+        success: function(){ fetchItems(); resetForm(); alert("Item updated!"); },
+        error: function(){ alert("Update failed!"); }
+      });
+    } else {
+      $.post(apiURL, { title, body }, function(){
+        fetchItems();
+        resetForm();
+        alert("Item created!");
+      }).fail(function(){ alert("Create failed!"); });
+    }
+  });
+
+  function resetForm(){
+    $("#itemId, #title, #body").val("");
+  }
+
+  $(document).on("click", ".edit-btn", function(){
+    const id = $(this).data("id");
+    $.get(apiURL + "/" + id, function(data){
+      $("#itemId").val(data.id);
+      $("#title").val(data.title);
+      $("#body").val(data.body);
+    });
+  });
+
+  $(document).on("click", ".delete-btn", function(){
+    const id = $(this).data("id");
+    if(confirm("Delete this item?")){
+      $.ajax({
+        url: apiURL + "/" + id,
+        method: "DELETE",
+        success: function(){ fetchItems(); alert("Item deleted!"); },
+        error: function(){ alert("Delete failed!"); }
+      });
+    }
+  });
+
+  $(document).ready(fetchItems);
+  </script>
 
 </body>
 </html>
