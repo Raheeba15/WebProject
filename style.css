@@ -49,15 +49,15 @@ body {
 .nav-right li a {
   text-decoration: none;
   color: #686161;
-  font-weight: 800;
+  font-weight: 900;
   transition: color 0.3s;
 }
 
 .hero-section {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  margin-top: 60px;
+  gap: 20px;
+  margin-top: 80px;
   margin-left: 212px;
 }
 
@@ -87,14 +87,14 @@ body {
 
 .slider-layer {
   position: absolute;
-  bottom: 163px;
+  bottom: 160px;
   left: 31%;
   transform: translateX(-50%);
   color: #b4a4a4;
   font-family: 'Alegreya', serif;
-  font-size: 23px;
+  font-size: 17.5px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 33px;
   text-align: left;
   white-space: nowrap;
   z-index: 5;
@@ -103,10 +103,10 @@ body {
 .slider-button {
   position: absolute;
   top: 65%;
-  left: 13.2%;
+  left: 11.2%;
   transform: translateX(-50%);
   font-family: 'Alegreya', serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #ceaf73;
   text-align: center;
@@ -520,9 +520,18 @@ body {
     align-items: center;
   }
 
+    .happening-card img,
+.gallery-row img {
+  display: block;
+  margin: 0 auto; /* centers images */
+  max-width: 90%; /* makes images responsive */
+  height: auto;
+}
+
   .happening-card {
     max-width: 100%;
     text-align: center;
+    margin: 0 auto;
   }
 
   .happening-text h3 {
@@ -555,6 +564,7 @@ body {
   .newsletter {
     margin-left: 0;
   }
+
 }
 
 /* Very small screens (phones ≤480px) */
@@ -582,4 +592,5 @@ body {
     gap: 10px;
   }
 }
+
 }
